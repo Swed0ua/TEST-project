@@ -1,0 +1,247 @@
+/** My styles **/
+
+.slider__wrapper{
+    overflow: hidden;
+}
+.main__slider{
+    position: relative;
+}
+.slider__slide{
+    width: 100%;
+    max-height: 740px;
+    height: calc(100vh - 181px);
+    min-height: 356px;
+    background-color: #000000;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+/** Slide **/
+
+.slide__text {
+    max-width: 510px;
+    width: 40%;
+    margin-left: 50%;
+    padding: 0 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+.slide__title>h2 {
+    line-height: 35pt;
+    font-size: 52px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.slide__title span {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+.slide__descriptions>p {
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+
+.slide__button>a{
+    text-transform: uppercase;
+    background-color: #e6362c;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    padding: 10px 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+
+.slide__button>a:hover {
+    background-color: #fff;
+    color: #e6362c;
+    box-shadow: 0 0 5px 0.5px #e6352c83;
+}
+
+
+.slide__back {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    
+    min-width: 0;    
+}
+
+.slide__back>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**Default styles**/
+
+/* Слайдер */
+.slick-slider{
+    position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    position: relative;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    min-width: 0;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    z-index: 5;
+    font-size: 0;
+    background-repeat: no-repeat;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: -50px;
+    background-image: url(../img/ico/arrow_PREV.png);
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: -50px;
+    background-image: url(../img/ico/arrow_NEXT.png);
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+.slick-dots li{
+    margin: 0 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+}
+
+.slick-dots li.slick-active button{
+    background-color: #e6362c;
+}
+
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #333333;
+}
+
+
+
+/** Slider 1  **/
+
+@media screen and (max-width: 1000px){
+    .slide__text {
+        padding: 0 50px;
+    }
+
+    .slide__title>h2{
+        font-size: 40px;
+        line-height: 30pt;
+    }
+
+    .slide__title span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .slide__text {
+        padding: 0 50px;
+        margin-left: 40%;
+    }
+
+    .slide__title>h2{
+        font-size: 35px;
+        line-height: 25pt;
+    }
+
+    .slide__title span{
+        font-size: 20px;
+    }
+
+    .slide__descriptions > p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 505px){
+    .slide__text {
+        margin-left: 0%;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .slide__back {
+        opacity: 0.4;
+    }
+}
