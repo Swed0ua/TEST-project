@@ -5,8 +5,7 @@ let select_Mtag = {
 };
 
 document.addEventListener("click", function(e) {
-    let a = e.path[0]
-    console.log(e);
+    let a = e.path[0];
 
     while(a){
     
@@ -47,7 +46,7 @@ break;
             item : document.querySelectorAll('.language__item::after')
         }
         languageFlag.item
-        console.log(languageFlag.item);
+        
 
     }
 
