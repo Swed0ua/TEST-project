@@ -92,3 +92,27 @@ a {
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
 }
+
+
+/** scrollbar **/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e6362c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b62821;
+  }
