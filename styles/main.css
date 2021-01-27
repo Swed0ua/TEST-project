@@ -10,6 +10,11 @@ html{
     overflow-x: hidden;
 }
 
+main {
+    position: relative;
+    z-index: 1;
+}
+
 
 .content__wrapper {
     width: 100%;
@@ -45,5 +50,17 @@ a {
     height: 2px;
     background-color: #4D4D4D;
     margin: 70px 0;
+}
+
+.bottom__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.bottom__background>img {
+    width: 100%;
 }
 

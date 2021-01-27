@@ -6,6 +6,8 @@ footer{
     align-items: center;
     color: #4d4d4d;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .footer__socialICO {
